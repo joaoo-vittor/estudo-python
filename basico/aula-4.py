@@ -1,9 +1,14 @@
 """
+Aula 4
 
-Variaveis:
+1. (num + num) -> Os parenteses tem maior precedência,
+                 operações dentro dele são realizadas primeiro.
 
-Inicia com letra, pode ter numeros, separa com _ ou letra maiuscula.
+2. ** -> Exponenciação.
 
+3. *  /  //  %  -> Na sequência MULTIPLICAÇÃO, DIVISÃO,
+                  DIVISÃO INTEIRA e MÓDULO.
+
+4. +  -  -> SOMA e SUBTRAÇÃO.
 
 """
-

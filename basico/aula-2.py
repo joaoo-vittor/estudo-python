@@ -1,9 +1,11 @@
 """
+Aula 2
 
-Tipos primitivos
--> str - string
--> int - inteiro
--> float - real/ponto flutuante
--> bool - booleano/lógico
+string - 'aspas simples', "aspas duplas"
+
+ -> "' ou '" essa uso das aspas gera erro.
 
 """
+
+nome1 = 'seu nome'
+nome2 = "seu nome"

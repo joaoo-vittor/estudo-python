@@ -1,11 +1,12 @@
 """
+Aula 5
 
-Formatação de string
-
-f'{var:.2f}'
-'{0} texto {1} texto {2}'.format(var1, var2, var3)
+Variaveis - Inicia com letra, pode conter numero, seperar _ ou getSize, letras maiuscula.
 
 """
 
-
-
+nome = 'seu nome'
+idade = 22
+altura = 1.88
+maiorIdade = idade > 18
+data_atual = 2020
