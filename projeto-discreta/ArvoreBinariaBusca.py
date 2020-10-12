@@ -21,17 +21,21 @@ class ArvoreBinaria:
       self.raiz = None
 
   def altura(self, no=None):
+    # VERIFICA SE ESTA SENDO PASSADO UM NO DE INICIO 
     if no is None:
       no = self.raiz
 
     altura_esquera = 0
     altura_direita = 0
 
+    # VERIFICA SE TEM UM NÓ A ESQUERDA
     if no.esquerda:
       altura_esquera = self.altura(no.esquerda)
+    # VERIFICA SE TEM UM NÓ A DIREITA
     if no.direita:
       altura_direita = self.altura(no.direita)
-      
+
+    # VERIFICA QUAL ALTURA É MAIOR
     if altura_direita > altura_esquera:
       return altura_direita + 1
     return altura_esquera + 1
@@ -86,7 +90,7 @@ class ArvoreBinaria:
 
          89
     45       99
-           95  111
-
+          95     111
+              109
 
 """
