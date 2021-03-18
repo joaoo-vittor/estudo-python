@@ -1,4 +1,5 @@
 {
-  "python.formatting.provider": "black",
-  "jupyter.jupyterServerType": "local"
+  "jupyter.jupyterServerType": "local",
+  "python.formatting.blackPath": "autopep8",
+  "editor.tabSize": 2,
 }
