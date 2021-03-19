@@ -23,3 +23,26 @@ Banco será responsável autenticar o cliente e as contas da seguinte maneira:
     * Checar se a conta é daquele banco
 Só será possível sacar se passar na autenticação do banco (descrita acima)
 """
+
+from conta import ContaPoupanca, ContaCorrente
+from cliente import Cliente
+from banco import Banco
+
+banco = Banco()
+
+cliente1 = Cliente('joao', 22)
+cliente2 = Cliente('vitor', 26)
+
+conta1 = ContaPoupanca(1111, 2222, 0)
+conta2 = ContaCorrente(2222, 3333, 0)
+
+cliente1.inserir_cliente(conta1)
+cliente2.inserir_cliente(conta2)
+
+print(cliente1.getNome)
+cliente1.conta.detalhes()
+print(cliente2.getNome)
+cliente2.conta.detalhes()
+
+banco.inserir_cliente(cliente1)
+banco.inserir_conta(conta1)
