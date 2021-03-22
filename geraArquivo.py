@@ -19,5 +19,5 @@ def geraSnippet(n):
         file.write(aux)
 
 
-geraArquivo('aula', '.py', 16, 16+6)
+geraArquivo('aula', '.py', 1, 20)
 # geraSnippet(15)
