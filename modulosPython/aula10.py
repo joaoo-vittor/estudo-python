@@ -50,7 +50,8 @@ for i in range(size):
         cont += 8
 
 for index, palavra in enumerate(base_final[0]):
-    nome = re.match(r'^(\w\s?\.?)+|(-)', palavra)
+    # nome = re.match(r'^(\w\s?\.?)+|(-)', palavra)
+    nome = re.match(r'^(\w\s?\.?|\(\d+\))+|(-)', palavra)
     nome = (nome.group()).strip()
     base_final[0][index] = nome
 
