@@ -1,0 +1,8 @@
+-> Startar um projeto Django
+  $ django-admin startproject src .
+
+-> Criar um app
+  $ python3 manage.py startapp blog
+
+-> 
+
