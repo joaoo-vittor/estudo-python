@@ -1,0 +1,14 @@
+-> instalar o Django
+  $ pip3 install django
+
+-> Startar um projeto Django
+  $ django-admin startproject src .
+  OU
+  $ /home/joao/.local/bin/django-admin startproject src .
+
+-> Criar um app
+  $ python3 manage.py startapp blog
+
+-> Iniciar o servidor
+  $ python3 manage.py runserver
+
