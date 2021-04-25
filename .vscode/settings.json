@@ -1,0 +1,5 @@
+{
+  "jupyter.jupyterServerType": "local",
+  "python.formatting.blackPath": "autopep8",
+  "editor.tabSize": 2,
+}

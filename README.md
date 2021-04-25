@@ -10,3 +10,5 @@
 - Banco de Dados com Python
 - Django Básico
 
+=======
+Estudo da Linguagem de Programação Python3
