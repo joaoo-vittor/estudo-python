@@ -1,0 +1,63 @@
+____________________________________________________________________________________
+1- comando para instalar o virtualenv:					       |
+										       |
+$ sudo pip install virtualenv							       |
+										       |
+Pronto! virtualenv instalado e funcionando! Agora vamos começar a utilizá-lo!       |
+										       |
+____________________________________________________________________________________|
+2- Inicializando um Ambiente Virtual                                                |
+virtualenv possui apenas um comando! Olha que simples: 			       |
+										       |
+$ virtualenv [opções] <nome_da_pasta>                                               |
+										       |
+____________________________________________________________________________________|
+3- Script de Ativação do Ambiente Virtual					       |
+Após criar o seu novo ambiente, podemos ativá-lo com o comando: 		       |
+										       |
+$ source ENV/bin/activate                     				       |
+										       |	
+O comando source lê um arquivo e executa os comandos contidos ali.                  |
+Ao ativar o virtualenv, o diretório ENV/bin será adicionado como                    |
+primeiro registro do caminho $PATH do seu sistema operacional.    		       |
+										       |
+____________________________________________________________________________________|
+4- Como Desativar seu Ambiente Virtual  					       |
+Para desativar um ambiente virtual e remover tudo que foi feito e instalado,        |
+retornando ao estado anterior do sistema (sem o virtualenv) basta executar:         |
+										       |
+$ deactivate                                    				       |
+$ rm -r ENV                                                                         |
+                                                                                    |
+										       |
+Fazendo isso, seu ambiente virtual é desfeito e tudo que foi copiado                |
+para este ambiente é apagado (comando rm).					       |
+____________________________________________________________________________________|
+5- Intalar o Freeze								       |
+										       |
+$ pip install freeze								       |
+										       |
+Feita a instalação, você pode criar um arquivo com a lista das dependências usando: |
+										       |
+$ pip freeze -l > requirements.txt                                                  |
+____________________________________________________________________________________|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
