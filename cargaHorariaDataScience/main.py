@@ -1,12 +1,60 @@
 from bs4 import BeautifulSoup
+import requests as req
 import math
 
+test = """Adobe XD
+Blender
+Desenho básico
+Design de Jogos
+Design Gráfico
+Edição de vídeo
+Estatística para UX Research
+Figma 
+Fotografia 
+HQ - Narrativa Sequencial
+Identidade Visual 
+Identidade Visual com softwares gratuitos 
+Ilustração Publicitária no Photoshop 
+InDesign 
+Motion Design
+Osteologia ZBrush 
+Pesquisas qualitativas para UX Research 
+Pintura Digital no Photoshop 
+Produção com Photoshop
+Produção de vídeo no Premiere 
+Produção Gráfica com Illustrator
+Props para games 
+Sketch 
+Tratamento de Imagem 
+Unreal Engine 
+UX Design 
+UX Research 
+"""
+
+aux_list = []
+aux_name = ''
+for i in list(test):
+    if i != '\n':
+        aux_name += i
+    else:
+        aux_list.append(aux_name.strip())
+        aux_name = ''
+
+# print(aux_list)
+
+
 modulos = ['sql', 'data-science', 'data-visualization',
-           'machine-learning', 'excel', 'business-intelligence',
+           'machine-learning', 'business-intelligence',
            'nosql', 'matematica', 'estatistica']
 
 cargas = {}
 
+
+html = req.get(url='https://www.alura.com.br/cursos-online-design-ux')
+
+# print(html.text)
+
+"""
 with open('./alura.html', 'r') as f:
     html = BeautifulSoup(f, 'html.parser')
     # print(html)
@@ -31,6 +79,31 @@ with open('./alura.html', 'r') as f:
         if len(arr_carga) == len(arr_curso):
             for i in zip(arr_curso, arr_carga):
                 cargas[aux_mod].append(i)
+"""
+
+html = BeautifulSoup(html.text, 'html.parser')
+# print(html)
+for i in aux_list:
+    arr_curso = []
+    arr_carga = []
+    aux_mod = ''
+    for content in html.find_all(attrs={'id': i}):
+        # print(content)
+        for el in content.find(attrs={'class': 'subcategoria__nome'}):
+            aux_mod = el
+            cargas[str(el)] = []
+        for el2 in content.find_all(attrs={'class': 'card-curso__nome'}):
+            arr = []
+            for aux in el2.text.split(' '):
+                if aux != '':
+                    arr.append(aux.replace('\n', ''))
+            arr_curso.append(' '.join(arr))
+        for el3 in content.find_all(attrs={'class': 'card-curso__carga'}):
+            arr_carga.append(el3.text.strip())
+
+    if len(arr_carga) == len(arr_curso):
+        for i in zip(arr_curso, arr_carga):
+            cargas[aux_mod].append(i)
 
 horas_estudo_dia = float(input('Quantas Horas de estudo por dia: '))
 aux_total = 0
