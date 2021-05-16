@@ -1,7 +1,6 @@
 asgiref==3.3.4
 Django==3.2
 django-environ==0.4.5
-freeze==0.0.1
 gunicorn==20.1.0
 psycopg2==2.8.5
 Pillow==8.2.0
