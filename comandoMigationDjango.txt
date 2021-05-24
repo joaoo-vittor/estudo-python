@@ -1,0 +1,20 @@
+
+-> Execultar migrations sempre apos trabalhar nos models:
+	
+	$ python manage.py migrate
+	
+
+-> Fazer novas migrações:	
+	
+	$ python manage.py makemigrations
+	
+	
+-> Criar SuperUsuario:
+	
+	$ python3 manage.py createsuperuser
+
+
+-> 
+
+
+

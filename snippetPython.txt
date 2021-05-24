@@ -1,0 +1,84 @@
+"SnippetPY n 1": {
+	"prefix": "",
+	"body": [
+		""
+	],
+},
+"SnippetPY n 2": {
+	"prefix": "",
+	"body": [
+		""
+	],
+},
+"SnippetPY n 3": {
+	"prefix": "",
+	"body": [
+		""
+	],
+},
+"SnippetPY n 4": {
+	"prefix": "",
+	"body": [
+		""
+	],
+},
+"SnippetPY n 5": {
+	"prefix": "",
+	"body": [
+		""
+	],
+},
+"SnippetPY n 6": {
+	"prefix": "",
+	"body": [
+		""
+	],
+},
+"SnippetPY n 7": {
+	"prefix": "",
+	"body": [
+		""
+	],
+},
+"SnippetPY n 8": {
+	"prefix": "",
+	"body": [
+		""
+	],
+},
+"SnippetPY n 9": {
+	"prefix": "",
+	"body": [
+		""
+	],
+},
+"SnippetPY n 10": {
+	"prefix": "",
+	"body": [
+		""
+	],
+},
+"SnippetPY n 11": {
+	"prefix": "",
+	"body": [
+		""
+	],
+},
+"SnippetPY n 12": {
+	"prefix": "",
+	"body": [
+		""
+	],
+},
+"SnippetPY n 13": {
+	"prefix": "",
+	"body": [
+		""
+	],
+},
+"SnippetPY n 14": {
+	"prefix": "",
+	"body": [
+		""
+	],
+},
