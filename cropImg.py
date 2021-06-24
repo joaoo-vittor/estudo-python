@@ -2,7 +2,7 @@ from PIL import Image
 import os
 
 path = '/home/joao/Pictures'
-save_img_path = '/home/joao/Pictures/loac'
+save_img_path = '/home/joao/Pictures/imgs'
 paths_img = []
 
 for i in os.listdir(path):
@@ -17,7 +17,7 @@ for full_path, name in paths_img:
 
     # # width, height = img.size
     # # (esquerda, superior, direita, inferior) significa dois pontos
-    area = (0, 65, 1366, 768)
+    area = (0, 0, 1366, 768)
     img_crop = img.crop(area)
 
     save_path = ''
