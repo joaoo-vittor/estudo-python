@@ -1,3 +1,19 @@
+try:
+    import sys
+    import os
+
+    sys.path.append(
+        os.path.abspath(
+            os.path.join(
+                os.path.dirname(__file__),
+                '../src'
+            )
+        )
+    )
+except:
+    raise
+
+
 from unittest import TestCase
 import unittest
 
@@ -34,4 +50,5 @@ class TestCalculadora(TestCase):
             soma(10, '10')
 
 
-unittest.main(verbosity=2)
+if __name__ == '__main__':
+    unittest.main(verbosity=2)

@@ -10,6 +10,22 @@ Parte 2 -> Criar o código e ver o teste passar
 (Refactor)
 Parte 3 -> Melhorar o código
 """
+try:
+    import sys
+    import os
+
+    sys.path.append(
+        os.path.abspath(
+            os.path.join(
+                os.path.dirname(__file__),
+                '../src'
+            )
+        )
+    )
+except:
+    raise
+
+
 import unittest
 
 from bacon_com_ovos import bacon_com_ovos
@@ -65,4 +81,5 @@ class TestBaconComOvos(unittest.TestCase):
                     msg=f'"{entrada}" não retornou "{saida}"')
 
 
-unittest.main(verbosity=2)
+if __name__ == '__main__':
+    unittest.main(verbosity=2)
